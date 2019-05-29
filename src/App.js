@@ -72,12 +72,12 @@ export default class App extends React.Component {
 		}
             }else if(str[i]=="^"){
 		if(increaseFontSize!=-1){
-			tempStr = tempStr.substring(0,i+incresedCharacterCount) + "</h3>" + tempStr.substring(i+1+incresedCharacterCount,tempStr.length)
-			incresedCharacterCount+=4
+			tempStr = tempStr.substring(0,i+incresedCharacterCount) + "</font> + tempStr.substring(i+1+incresedCharacterCount,tempStr.length)
+			incresedCharacterCount+=6
 			increaseFontSize = -1;
 		}else{
-			tempStr = tempStr.substring(0,i+incresedCharacterCount) + "<h3>" + tempStr.substring(i+1+incresedCharacterCount,tempStr.length)
-			incresedCharacterCount+=3
+			tempStr = tempStr.substring(0,i+incresedCharacterCount) + "<font size="6">"" + tempStr.substring(i+1+incresedCharacterCount,tempStr.length)
+			incresedCharacterCount+=14
 			increaseFontSize = i;
 		}
             }else if(str[i] == "[" && leftSideBracket==-1){
@@ -101,7 +101,7 @@ export default class App extends React.Component {
 	}
 	if(increaseFontSize!=-1){
 		let last_index = tempStr.lastIndexOf("<h3>");
-		tempStr = tempStr.substring(0,last_index) + "^" + tempStr.substring(last_index+4,tempStr.length)
+		tempStr = tempStr.substring(0,last_index) + "^" + tempStr.substring(last_index+14,tempStr.length)
 	}
 	if(leftSideBracket!=-1){
 		let last_index = tempStr.lastIndexOf("<a>");
