@@ -72,7 +72,7 @@ export default class App extends React.Component {
 		}
             }else if(str[i]=="^"){
 		if(increaseFontSize!=-1){
-			tempStr = tempStr.substring(0,i+incresedCharacterCount) + "</font> + tempStr.substring(i+1+incresedCharacterCount,tempStr.length)
+			tempStr = tempStr.substring(0,i+incresedCharacterCount) + "</font>" + tempStr.substring(i+1+incresedCharacterCount,tempStr.length)
 			incresedCharacterCount+=6
 			increaseFontSize = -1;
 		}else{
