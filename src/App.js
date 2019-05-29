@@ -76,7 +76,7 @@ export default class App extends React.Component {
 			incresedCharacterCount+=6
 			increaseFontSize = -1;
 		}else{
-			tempStr = tempStr.substring(0,i+incresedCharacterCount) + "<font size='6'>"" + tempStr.substring(i+1+incresedCharacterCount,tempStr.length)
+			tempStr = tempStr.substring(0,i+incresedCharacterCount) + "<font size='6'>" + tempStr.substring(i+1+incresedCharacterCount,tempStr.length)
 			incresedCharacterCount+=14
 			increaseFontSize = i;
 		}
