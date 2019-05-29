@@ -43,16 +43,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/IonicaBizau/react-todo-app.git"
+    "url": "git+ssh://git@github.com/manishajmera/markDownEditor.git"
   },
   "blah": {
     "show_installation": true,
-    "description": "**Hey!** :blush: This is my first project in React. If you find any tips, please share them with me and let me know what can pe improved.",
+    "description": "",
     "is_only_web": false,
     "installation_command": {
       "language": "sh",
       "content": [
-        "git clone https://github.com/IonicaBizau/react-todo-app/",
+        "git clone https://github.com/manishajmera/markDownEditor/",
         "cd react-todo-app",
         "npm i",
         "npm run start:dev",
